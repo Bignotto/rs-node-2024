@@ -1,0 +1,17 @@
+{
+  "name": "rs-node-2024",
+  "version": "1.0.0",
+  "description": "Node Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Thiago Bignotto",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.2"
+  }
+}
