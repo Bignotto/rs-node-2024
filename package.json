@@ -21,5 +21,8 @@
     "tsx": "^4.15.7",
     "typescript": "^5.5.2",
     "typescript-eslint": "^7.14.1"
+  },
+  "dependencies": {
+    "fastify": "^4.28.0"
   }
 }
