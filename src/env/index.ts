@@ -7,6 +7,8 @@ const envSchema = z.object({
     .enum(["development", "stage", "production"])
     .default("production"),
   THE_APP_NAME: z.string(),
+  DATABASE_CLIENT: z.string(),
+  DATABASE_URL: z.string(),
 });
 
 const _env = envSchema.safeParse(process.env);
