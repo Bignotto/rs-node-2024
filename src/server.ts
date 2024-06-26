@@ -1,18 +1,16 @@
-import "dotenv/config";
+import { env } from "./env";
 import Fastify from "fastify";
 
 const fastify = Fastify();
 
-console.log(process.env);
-
 fastify.get("/", () => {
-  return `The app name is: ${process.env.THE_APP_NAME}`;
+  return `The app name is: ${env.THE_APP_NAME}`;
 });
 
 try {
   fastify
     .listen({ port: 3333 })
-    .then(() => console.log(`The app name is: ${process.env.THE_APP_NAME}`));
+    .then(() => console.log(`The app name is: ${env.THE_APP_NAME}`));
 } catch (error) {
   fastify.log.error(error);
   process.exit(1);

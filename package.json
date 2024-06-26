@@ -2,7 +2,7 @@
   "name": "rs-node-2024",
   "version": "1.0.0",
   "description": "Node Boilerplate",
-  "main": "index.js",
+  "main": "src/server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch src/server.ts"
@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
-    "fastify": "^4.28.0"
+    "fastify": "^4.28.0",
+    "zod": "^3.23.8"
   }
 }
