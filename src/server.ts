@@ -1,10 +1,17 @@
-import { env } from "./env";
+import cookie from "@fastify/cookie";
 import Fastify from "fastify";
+import { env } from "./env";
+import { transactionsRoutes } from "./routes/transactions";
 
 const fastify = Fastify();
+fastify.register(cookie);
 
 fastify.get("/", () => {
   return `The app name is: ${env.THE_APP_NAME}`;
+});
+
+fastify.register(transactionsRoutes, {
+  prefix: "transactions",
 });
 
 try {
